@@ -1,0 +1,268 @@
+:root {
+  --blue-theme: #112f91;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+html,body {
+  overflow-x: hidden;
+}
+
+/* warna tema biru */
+.blue-theme {
+  color: var(--blue-theme);
+}
+
+.blue-background {
+  background-color: var(--blue-theme);
+}
+
+.container {
+  margin-bottom: 0;
+}
+
+/* button scroll to top */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  z-index: 99;
+  font-size;
+  border: none;
+  outline: none;
+  background-color: var(--blue-theme);
+  color: white !important;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  transition: 0.1s;
+}
+
+#myBtn:hover {
+  background-color: #f8f8f8;
+  color: var(--blue-theme) !important;
+  
+}
+/* navbar */
+
+/* active page border bottom */
+.active {
+  border-bottom: 1px solid black;
+  transition: 0.5s;
+}
+
+/* transisi navbar mobile */
+#navbarsExample04 {
+  transition: height 0.35s ease;
+}
+
+/* transisi search bar  */
+#searchForm {
+  width: 12rem;
+  transition: 0.25s;
+}
+
+#searchForm.collapsing {
+  width: 0;
+  transition: 0.25s;
+}
+
+/* ganti icon search bar collapse */
+a[aria-expanded="true"] .fa-search {
+  display: none;
+}
+a[aria-expanded="false"] .fa-close {
+  display: none;
+}
+
+/* font */
+
+.font-bold {
+  font-family: "Poppins Bold";
+}
+
+.font-semibold {
+  font-family: "Poppins Semibold";
+}
+
+.font-regular {
+  font-family: "Poppins Regular";
+}
+
+.font-medium {
+  font-family: "Poppins Medium";
+}
+
+.font-normal {
+  font-family: "Poppins Normal";
+}
+
+/* stars orange rating */
+.checked {
+  color: orange;
+}
+
+
+
+/* button proceed besar */
+#button-proceed {
+  min-width: 11rem;
+  background-color: var(--blue-theme);
+  border: 2px solid var(--blue-theme);
+}
+
+#button-proceed:hover {
+  font-weight: 400;
+  background-color: white;
+  color: var(--blue-theme);
+  border: 2px solid var(--blue-theme);
+  transition: 0.1s;
+}
+
+
+/* footer */
+
+footer img {
+  max-width: 100%;
+}
+
+/* container pertama main */
+
+.row.wrapper-pertama {
+  margin-top: 1rem;
+}
+
+/* button theme */
+.button-theme {
+  background-color: var(--blue-theme) !important;
+  border: 2px solid var(--blue-theme) !important;
+}
+
+.button-theme:hover {
+  font-weight: 400 !important;
+  background-color: white !important;
+  color: var(--blue-theme) !important;
+  border: 2px solid var(--blue-theme) !important;
+  transition: 0.1s !important;
+}
+
+/* button theme */
+.button-theme2 {
+  color: var(--blue-theme) !important;
+  background-color: white !important;
+  border: 2px solid var(--blue-theme) !important;
+}
+
+.button-theme2:hover {
+  font-weight: 400 !important;
+  background-color: var(--blue-theme) !important;
+  color: white !important;
+  border: 2px solid var(--blue-theme) !important;
+  transition: 0.1s !important;
+}
+
+/* wrapper2 background arrow */
+.background-arrow {
+  background: url(assets/background\ arrow.svg) no-repeat center center;
+  /* background-size: cover; */
+}
+
+/* quantity input field */
+#quantity {
+  max-width: 45px;
+}
+
+/* card */
+#wrapper2-card {
+  height: 22rem;
+  width: 15rem;
+  background-color: #f8f8f8;
+  border: none;
+}
+
+/* product catalog / sidebar */
+.scroll-sidebar {
+  max-height: 16rem;
+  overflow-y: auto;
+}
+
+/* hover blue */
+
+.blue-hover:hover {
+  color: var(--blue-theme) !important;
+  transition: 0.1s !important;
+}
+
+/* image hover zoom */
+/* [1] The container */
+.img-hover-zoom {
+  height: 300px
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .2s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.2);
+}
+
+/* card hover */
+.card-hover:hover {
+  width: 120%;
+}
+
+.bg-image-vertical {
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto 100%;
+  }
+
+#background {
+  background-image: url(assets/background/register.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+@media (max-width: 768px) {
+  /* navbar */
+  .active {
+    border: none;
+    font-weight: bold;
+  }
+
+  #searchForm {
+    width: 100%;
+    transition: none;
+    display: flex;
+  }
+
+  #searchForm.collapsing {
+    transition: none;
+  }
+
+  #search-button {
+    visibility: collapse;
+  }
+
+  /* main */
+
+  #figure1 {
+    margin-top: 7rem;
+  }
+}

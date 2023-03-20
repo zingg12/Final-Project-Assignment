@@ -1,0 +1,71 @@
+/* padding 6x */
+.pt-6,
+.py-6 {
+  padding-top: 5rem !important;
+}
+
+.pr-6,
+.px-6 {
+  padding-right: 5rem !important;
+}
+
+.pb-6,
+.py-6 {
+  padding-bottom: 5rem !important;
+}
+
+.pl-6,
+.px-6 {
+  padding-left: 5rem !important;
+}
+
+/* margin 6x */
+
+.mt-6,
+.my-6 {
+  margin-top: 5rem !important;
+}
+
+.mr-6,
+.mx-6 {
+  margin-right: 5rem !important;
+}
+
+.mb-6,
+.my-6 {
+  margin-bottom: 5rem !important;
+}
+
+.ml-6,
+.mx-6 {
+  margin-left: 5rem !important;
+}
+
+/* form control outline */
+
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+@media (max-width: 768px) {
+  /* padding 6x */
+  .pt-6,
+  .py-6 {
+    padding-top: 1rem !important;
+  }
+
+  .pr-6,
+  .px-6 {
+    padding-right: 1rem !important;
+  }
+
+  .pb-6,
+  .py-6 {
+    padding-bottom: 1rem !important;
+  }
+
+  .pl-6,
+  .px-6 {
+    padding-left: 1rem !important;
+  }
+}
